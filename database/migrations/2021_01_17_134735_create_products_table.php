@@ -25,8 +25,7 @@ class CreateProductsTable extends Migration
             $table->boolean('featured')->default(false);
             $table->boolean('bestseller')->default(false);
             $table->unsignedFloat('vat')->default(0);
-            $table->unsignedFloat('POSTP');
-            $table->unsignedFloat('POSPP');
+            $table->unsignedFloat('price');
             $table->boolean('ActiveItem')->default(true);
             $table->boolean('InStock');
             $table->unsignedBigInteger('GroupCode');

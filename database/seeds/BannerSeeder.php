@@ -18,8 +18,8 @@ class BannerSeeder extends Seeder
             ['image' => 'sliders/03.jpg'],
         ];
         $banners = [
-            ['image' => 'sliders/banners/01.jpg', 'type' => 1],
-            // ['image' => 'sliders/banners/02.png', 'type' => 1],
+            ['image' => 'sliders/banners/01.webp', 'type' => 1],
+            ['image' => 'sliders/banners/02.webp', 'type' => 1],
         ];
 
         Banner::insert($sliders);

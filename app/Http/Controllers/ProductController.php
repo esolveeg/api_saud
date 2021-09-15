@@ -7,14 +7,7 @@ use App\CartProduct;
 use App\Group;
 use App\Http\Requests\ListProductRequest;
 use App\Product;
-use App\QueryFilters\ByWeight;
-use App\QueryFilters\PriceTo;
-use App\QueryFilters\PriceFrom;
-use App\QueryFilters\Search;
-use App\QueryFilters\GroupCode;
-use App\QueryFilters\Sort;
 use Illuminate\Http\Request;
-use Illuminate\Pipeline\Pipeline;
 use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
@@ -78,12 +71,13 @@ class ProductController extends Controller
     }
     public function list(ListProductRequest $request)
     {
-        $PriceFrom = $request->PriceFrom ? $request->PriceFrom : null;
-        $PriceTo = $request->PriceTo ? $request->PriceTo : null;
-        $Search = $request->Search ? $request->Search : null;
+        $priceFrom = $request->priceFrom ? $request->priceFrom : null;
+        $priceTo = $request->priceTo ? $request->PriceTo : null;
+        $search = $request->search ? $request->search : null;
+        // dd($PriceFrom);
         $page = $request->page ?  $request->page : 1;
-        $GroupCode = $request->group ? $request->group : null;
-        $products =DB::select("CALL GetProducts(? , ? , ? , ? , ? , ? , @CountRecords ) " , [$Search , asset('images/') , $PriceFrom , $PriceTo ,$GroupCode,$page  ]);
+        $groupCode = $request->group ? $request->group : null;
+        $products =DB::select("CALL GetProducts(? , ? , ? , ? , ? , ? , @CountRecords ) " , [$search , asset('images/') , $priceFrom , $priceTo ,$groupCode,$page  ]);
         $count = DB::select('select @CountRecords as count')[0]->count;
         $last = ceil($count / 8);
         $result = ['data' => $products , 'total' => $count , 'last_page' => $last];
