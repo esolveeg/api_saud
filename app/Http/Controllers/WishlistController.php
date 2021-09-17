@@ -86,7 +86,7 @@ class WishlistController extends Controller
         $rec = [
             "cart_id" => $cart,
             "product_id" => $product->id,
-            "price" => $product->POSPP,
+            "price" => $product->price,
             "qty" => $qty,
         ];
         // dd($rec);
