@@ -13,8 +13,12 @@ class GroupSeeder extends Seeder
     public function run()
     {
         $groups = [
-            [ "icon" => "paper-roll" , "Home" => 1 , "GroupNameEn"=> "Thermal Paper products" , "GroupName"=>"الورق الحراري ", "image" => null , "FatherCode"=>null, "Featured" => 1],
-            [ "icon" => "desktop-classic" , "Home" => 1 , "GroupNameEn"=> "Hardware for retail" , "GroupName"=>"هارد وير","FatherCode"=>null, "image" => null , "Featured" => 1],
+            
+            
+            
+            [ "icon" => "paper-roll" , "Home" => 1 , "GroupNameEn"=> "عود" , "GroupName"=>"عود ", "image" => null , "FatherCode"=>null, "Featured" => 1],
+            [ "icon" => "paper-roll" , "Home" => 1 , "GroupNameEn"=> "بخور" , "GroupName"=>"بخور ", "image" => null , "FatherCode"=>null, "Featured" => 1],
+            [ "icon" => "desktop-classic" , "Home" => 1 , "GroupNameEn"=> "عطر" , "GroupName"=>"عطر","FatherCode"=>null, "image" => null , "Featured" => 1],
         ];
         Group::insert($groups);
     }

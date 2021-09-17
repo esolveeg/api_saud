@@ -19,7 +19,6 @@ class CreateGroupsTable extends Migration
             $table->string('GroupName');
             $table->string('icon')->nullable();
             $table->string('image')->nullable();
-            $table->boolean('ByWeight')->default(false);
             $table->unsignedBigInteger('FatherCode')->nullable();
             $table->boolean('Active')->default(true);
             $table->boolean('Featured')->default(false);

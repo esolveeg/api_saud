@@ -18,6 +18,8 @@ class CreateProductsTable extends Migration
             $table->string('ProductCode')->unique()->nullable();
             $table->string('ItemNameEn');
             $table->string('ItemName'); 
+            $table->string('PackageSize'); 
+            
             $table->string('ItemImage');
             $table->text('ItemDesc')->nullable();
             $table->text('ItemDescEn')->nullable();

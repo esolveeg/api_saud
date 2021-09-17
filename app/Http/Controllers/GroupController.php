@@ -73,7 +73,7 @@ class GroupController extends Controller
     }
     public function list(Request $request)
     {
-        $groups = Group::select('id' , 'icon' , 'GroupName', 'GroupNameEn', 'ByWeight' , 'icon')->active();
+        $groups = Group::select('id' , 'icon' , 'GroupName', 'GroupNameEn',  'icon')->active();
         if($request->featured){
             return $groups->where('Featured' , true)->get();
         }
@@ -88,7 +88,7 @@ class GroupController extends Controller
             if(!$isNull){
                 return $groups->where('FatherCode' ,  $request->FatherCode)->get();
             } else {
-                return Group::select('id' , 'GroupName', 'GroupNameEn', 'ByWeight' , 'icon')->active()->main()->get();
+                return Group::select('id' , 'GroupName', 'GroupNameEn',  'icon')->active()->main()->get();
             }
         }
         return $groups->main()->get();
@@ -98,7 +98,7 @@ class GroupController extends Controller
     {
         $rules = [
             "GroupName" => "required|max:255",
-            "ByWeight" => "nullable|max:1",
+          
             "FatherCode" => "nullable|max:20",
             "Active" => "boolean",
         ];
