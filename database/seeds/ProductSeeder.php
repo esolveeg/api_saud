@@ -33,16 +33,19 @@ class ProductSeeder extends Seeder
             ['ItemName' => '1959', 'ItemImage' => 'products/saud/14.jpg', 'ItemDesc' => '', 'price' => '', 'GroupCode' => 3, 'PackageSize' => '50 ml'],
             ['ItemName' => 'LAVA OUD', 'ItemImage' => 'products/saud/15.jpg', 'ItemDesc' => '', 'price' => '', 'GroupCode' => 3, 'PackageSize' => '50 ml'],
         ];;
-       
-        foreach ($items as $item) {
-            
 
-                $item['ItemNameEn'] = $item['ItemName'];
-                $item['InStock'] = true;
-                $item['price'] = rand(100,200);
-                
-                Product::create($item);
-            
+
+        foreach ($items as $index => $item) {
+
+
+            $item['ItemNameEn'] = $item['ItemName'];
+            $item['InStock'] = true;
+            $item['price'] = rand(100, 200);
+            if ($index < 5) $item['featured'] = true;
+            if ($index < 10 && $index > 5) $item['bestseller'] = true;
+            if ($index < 15 && $index > 10) $item['latest'] = true;
+
+            Product::create($item);
         }
         // Product::insert($items);
     }
