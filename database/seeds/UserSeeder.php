@@ -14,8 +14,8 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        $user = ['name' => 'test' , 'email' => 'test@elnozom.com' , 'password' => bcrypt(123456)];
-        $admin = ['name' => 'admin' , 'email' => 'admin@elnozom.com' , 'type' => 1 , 'password' => bcrypt(123456)];
+        $user = ['name' => 'test' , 'email' => 'test@saud.com' , 'password' => bcrypt(123456)];
+        $admin = ['name' => 'admin' , 'email' => 'admin@saud.com' , 'type' => 1 , 'password' => bcrypt(123456)];
         $user = User::create($user);
         $admin = User::create($admin);
         $phoneRecord = [ 
