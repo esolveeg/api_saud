@@ -15,28 +15,28 @@ class AreaSeeder extends Seeder
     {
         $areas = [
             [
-                "AreaName" => "Mohandseen",
+                "AreaName" => "الرياض",
+                "DeliveryServiceTotal" => 100,
+                "PostalCode" => "12234",
+                "AvilableFrom" => "12:00:00",
+                "AvilableTo" => "00:00:00",
+            ],
+            [
+                "AreaName" => "جدة",
                 "DeliveryServiceTotal" => 100,
                 "PostalCode" => "!2234",
                 "AvilableFrom" => "12:00:00",
                 "AvilableTo" => "00:00:00",
             ],
             [
-                "AreaName" => "New Cairo",
+                "AreaName" => "الدمام",
                 "DeliveryServiceTotal" => 100,
                 "PostalCode" => "!2234",
                 "AvilableFrom" => "12:00:00",
                 "AvilableTo" => "00:00:00",
             ],
             [
-                "AreaName" => "Nasr City",
-                "DeliveryServiceTotal" => 100,
-                "PostalCode" => "!2234",
-                "AvilableFrom" => "12:00:00",
-                "AvilableTo" => "00:00:00",
-            ],
-            [
-                "AreaName" => "Shehab",
+                "AreaName" => "الجريفة",
                 "DeliveryServiceTotal" => 100,
                 "PostalCode" => "!2234",
                 "AvilableFrom" => "12:00:00",
@@ -44,7 +44,7 @@ class AreaSeeder extends Seeder
                 "SectionNo" => 1
             ],
             [
-                "AreaName" => "Marghany",
+                "AreaName" => "حي السبيل",
                 "DeliveryServiceTotal" => 100,
                 "PostalCode" => "!2234",
                 "AvilableFrom" => "12:00:00",
@@ -52,7 +52,7 @@ class AreaSeeder extends Seeder
                 "SectionNo" => 2
             ],
             [
-                "AreaName" => "Abas El aqad",
+                "AreaName" => "حي القزاز",
                 "DeliveryServiceTotal" => 100,
                 "PostalCode" => "!2234",
                 "AvilableFrom" => "12:00:00",

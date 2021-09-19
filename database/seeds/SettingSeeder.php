@@ -21,39 +21,39 @@ class SettingSeeder extends Seeder
             ],
             [
                 'key' => 'address',
-                'value' => '3 Ibrahem Soliman from Shehab St, Mohndssen, Giza',
-                'value_ar' => '3 ابراهيم سليمان , متفرع من شارع شهاب , المهندسين , الجيزة',
+                'value' => 'طريق الملك فهد، العليا، الرياض 11564، المملكة العربية السعودية',
+                'value_ar' => 'طريق الملك فهد، العليا، الرياض 11564، المملكة العربية السعودية',
                 'type' => 'text',
             ],
             [
                 'key' => 'phone',
-                'value_ar' => '02 33041499',
+                'value_ar' => '+966 55 656 0101',
                 'type' => 'text',
-                'value' => ' 02 33041499 '
+                'value' => ' +966 55 656 0101 '
             ],
             [
                 'key' => 'email',
-                'value_ar' => 'info@elnozom.com',
+                'value_ar' => 'info@saud.com',
                 'type' => 'email',
-                'value' => ' info@elnozom.com'
+                'value' => ' info@saud.com'
             ],
             [
                 'key' => 'about',
-                'value' => 'A distinguished company and entity established in 1994 and has a leading role in the Egyptian market with distinguished solutions and programs that are easy to use in all retail and wholesale sectors.',
-                'value_ar' =>"شركة و كيان مميز أنشئت عام 1994 ولها دور رائد في السوق المصري بحلول وبرامج متميزة سهلة الاستخدام فى جميع قطاعات التجزئة و الجملة.",
+                'value' => 'أجمل للعطور، 69 عاماً من صناعة الذكريات.العطرهو كل ما تحتاجه للسفر عبر الزمان ، هذه هي الصلة بين الذاكرة والرائحة',
+                'value_ar' =>"أجمل للعطور، 69 عاماً من صناعة الذكريات.العطرهو كل ما تحتاجه للسفر عبر الزمان ، هذه هي الصلة بين الذاكرة والرائحة",
                 'type' => 'textarea',
             ],
             [
                 'key' => 'facebook',
-                'value_ar' => 'https://www.facebook.com/ElNozomSystems/',
+                'value_ar' => 'https://www.facebook.com/',
                 'type' => 'text',
-                'value' => 'https://www.facebook.com/ElNozomSystems/'
+                'value' => 'https://www.facebook.com/'
             ],
             [
                 'key' => 'instagram',
-                'value_ar' => 'https://www.instagram.com/elnozomeg/',
+                'value_ar' => 'https://www.instagram.com/',
                 'type' => 'text',
-                'value' => 'https://www.instagram.com/elnozomeg/
+                'value' => 'https://www.instagram.com/
                 '
             ],
 

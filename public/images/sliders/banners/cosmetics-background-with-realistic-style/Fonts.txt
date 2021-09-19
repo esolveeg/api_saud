@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Roboto
+Author: Christian Robertson
+Url: http://www.fontsquirrel.com/fonts/roboto
+
+Font: Abhaya Libre
+Author: Mooniak
+Url: https://www.fontsquirrel.com/fonts/abhaya-libre

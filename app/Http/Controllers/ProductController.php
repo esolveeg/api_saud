@@ -86,11 +86,11 @@ class ProductController extends Controller
     public function listHome($key , Request $request)
     {
         if($key == 'featured'){
-            $products = DB::select("SELECT * FROM products_view WHERE featured = 1");
+            $products = DB::select("SELECT * FROM products WHERE featured = 1");
         } else if($key == 'latest'){
-            $products = DB::select("SELECT * FROM products_view WHERE latest = 1");
+            $products = DB::select("SELECT * FROM products WHERE latest = 1");
         } else if($key == 'bestseller'){
-            $products = DB::select("SELECT * FROM products_view WHERE bestseller = 1");
+            $products = DB::select("SELECT * FROM products WHERE bestseller = 1");
             // dd($products);
         } else {
             return [];

@@ -16,7 +16,8 @@ class GlobalController extends Controller
     public function getHomeBanners()
     {
         return Banner::where('type' , 1)->get()->map(function ($item) {
-            $item->image = asset('images/') . '/' .$item->image;
+            // dd($item);
+            $item->image = file_exists('images/'.$item->image) ?  asset('images/') . '/' .$item->image  : $item->image;
             return $item;
         });
     }
